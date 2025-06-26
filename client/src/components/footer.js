@@ -12,6 +12,7 @@ const Footer = () => {
       </section>
 
       <section id="Socials">
+        <h4>Connect with me:</h4>
         <ul>
           <li>
             <a href="https://github.com/emihleChallotteBooi" target="_blank" rel="noopener noreferrer">
