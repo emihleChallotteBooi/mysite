@@ -1,10 +1,15 @@
 import React from 'react';
 import './ColumnLayout.css';
+import { Link } from 'react-router-dom';
 
 const ColumnLayout = ({ softwareImages, modellingImages }) => {
-  const ImageSection = ({ title, images }) => (
+  const ImageSection = ({ title, images, linkTo }) => (
     <article className="column-article">
-      <h2>{title}</h2>
+      <h2>
+        <Link to={linkTo} className="section-link">
+          {title}
+        </Link>
+      </h2>
       <div className="image-stack">
         {images.map((src, idx) => (
           <img
@@ -20,8 +25,20 @@ const ColumnLayout = ({ softwareImages, modellingImages }) => {
 
   return (
     <section className="column-layout">
-      <ImageSection title="Software Development" images={softwareImages} />
-      <ImageSection title="Model Portfolio" images={modellingImages} />
+      {softwareImages && (
+        <ImageSection
+          title="Software Development"
+          images={softwareImages}
+          linkTo="/software"
+        />
+      )}
+      {modellingImages && (
+        <ImageSection
+          title="Model Portfolio"
+          images={modellingImages}
+          linkTo="/modelling"
+        />
+      )}
     </section>
   );
 };
