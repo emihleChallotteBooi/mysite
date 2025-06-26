@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Landing from './pages/landing';
-import Home from './pages/home';
-import Software from './pages/software';
-import Modelling from './pages/modelling';
+import Landing from './pages/landing.js';
+import Home from './pages/home.js';
+import Software from './pages/software.js';
+import Modelling from './pages/modelling.js';
 
 function App() {
   return (
