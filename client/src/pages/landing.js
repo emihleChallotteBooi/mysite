@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/footer";
+import Nav from "../components/nav";
 
 function Landing() {
   return (
@@ -26,6 +27,9 @@ function Landing() {
 
       </section>
 
+<Nav showAbout={true} showHome={false} showResume={false} />
+
+<button>Welcome</button>
 
     </main>
     <Footer />
