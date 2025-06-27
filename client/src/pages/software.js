@@ -4,7 +4,8 @@ import Footer from '../components/footer.js';
 import ColumnLayout from '../components/ColumnLayout.js';
 import RightPanel from '../components/RightPanel.js';
 import Nav from '../components/nav.js';
-import './software.css'; 
+import './software.css';
+
 const softwareImages = [
   '/assets/currentProjects.png',
   '/assets/interest.png',
@@ -16,10 +17,16 @@ function Software() {
     <>
       <header></header>
 
-      <main style={{ display: 'flex', gap: '1rem', padding: '1rem' }}>
-        <ColumnLayout softwareImages={softwareImages} />
-        <RightPanel />
+      <main className="software-main">
+        <section className="column-layout">
+          <ColumnLayout softwareImages={softwareImages} />
+        </section>
+
+        <aside className="right-panel">
+          <RightPanel />
+        </aside>
       </main>
+
       <Nav showAbout={false} showHome={true} showResume={true} showModelling={false} />
       <Footer />
     </>

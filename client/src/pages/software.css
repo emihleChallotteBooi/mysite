@@ -1,19 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cinzel', serif;
-  background-color: #000000;
+/* Main container for Software page */
+.software-main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header {
-  background-color: #000000;
-  padding: 1rem 1rem;
-  border-bottom: 2px solid red; 
-  min-height: 40px;
+/* ColumnLayout wrapper */
+.column-layout {
+  flex: 1 1 60%;
+  max-width: 60%;
 }
 
-header h1 {
-  visibility: hidden; 
+/* RightPanel wrapper */
+.right-panel {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .software-main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .column-layout,
+  .right-panel {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
