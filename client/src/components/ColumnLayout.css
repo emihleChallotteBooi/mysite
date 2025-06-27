@@ -1,31 +1,71 @@
 .column-layout {
   display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem; /* reduce horizontal padding a bit */
+  flex-wrap: wrap; /* allow wrapping on smaller widths */
   gap: 2rem;
-  padding: 2rem;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto; /* center container on large screens */
 }
 
-/* Each section stacks images vertically */
+
 .column-article {
+  flex: 1 1 40%;
+  max-width: 40%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 300px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .column-article {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.column-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.15);
+}
+
+.section-link {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+  color: red; 
 }
 
 .image-stack {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: -1rem;
 }
 
 .article-image {
-  width: 100%;
-  border-radius: 8px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
-  aspect-ratio: 16 / 9; /* keeps consistent aspect ratio */
+  aspect-ratio: 20 / 9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.article-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px red;
 }
