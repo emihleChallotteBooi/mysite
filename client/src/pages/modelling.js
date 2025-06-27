@@ -86,10 +86,10 @@ function Modelling() {
             ))}
           </div>
         )}
-
-        <Nav showAbout={false} showHome={true} showResume={true} showPortfolio={true} />
         <h3>THANK YOU FOR VIEWING</h3>
+        
       </main>
+      <Nav showAbout={false} showHome={true} showResume={false} showPortfolio={true} />
       <Footer />
     </>
   );

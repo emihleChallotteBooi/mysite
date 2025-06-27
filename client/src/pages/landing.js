@@ -28,12 +28,13 @@ function Landing() {
 
         <section id="image"></section>
 
-        <Nav showAbout={true} showHome={false} showResume={false} />
+       
 
         <Link to="/home" id="button" className="button">
           Welcome
         </Link>
       </main>
+      <Nav showAbout={true} showHome={false} showModelling={false} showSoftware={false} />
       <Footer />
     </>
   );

@@ -19,7 +19,8 @@ const Footer = () => {
             <li>
               <a href="https://github.com/emihleChallotteBooi" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/github_icon.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+
                   alt="GitHub"
                 />
               </a>
@@ -27,7 +28,7 @@ const Footer = () => {
             <li>
               <a href="https://www.linkedin.com/in/queenchallotte/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/linkedin_icon.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                   alt="LinkedIn"
                 />
               </a>
