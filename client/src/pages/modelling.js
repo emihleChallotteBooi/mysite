@@ -23,7 +23,7 @@ const photos = [
 
 const nude = [
   { src: "/assets/nude0.jpeg", alt: "Nude 1" },
-  { src: "/assets/nude1.jpeg", alt: "Nude 2" },
+  { src: "/assets/nude.jpeg", alt: "Nude 2" },
   { src: "/assets/nude2.jpeg", alt: "Nude 3" },
 ];
 
@@ -67,7 +67,7 @@ function Modelling() {
                   className="overlay-text"
                   onClick={() => handle3DView(img.key)}
                 >
-                  View 3D
+                  View More
                 </div>
               </div>
             ))}
@@ -89,7 +89,7 @@ function Modelling() {
         <h3>THANK YOU FOR VIEWING</h3>
         
       </main>
-      <Nav showAbout={false} showHome={true} showResume={false} showPortfolio={true} />
+      <Nav showAbout={false} showHome={true} showSoftware={false} showPortfolio={true} />
       <Footer />
     </>
   );

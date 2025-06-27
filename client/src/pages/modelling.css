@@ -98,10 +98,10 @@ main {
   align-items: center;        /* vertical center */
   overflow-x: auto;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 2rem;
   height: 450px;
   gap: 0;
-  max-width: 100%;
+  max-width: auto; 
 }
 
 /* Stacked images with horizontal overlap */
@@ -111,7 +111,7 @@ main {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  margin-left: -180px;        /* overlap control */
+  margin-left: -100px;        /* overlap control */
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
