@@ -5,9 +5,9 @@ import ColumnLayout from '../components/ColumnLayout.js';
 import RightPanel from '../components/RightPanel.js';
 
 const softwareImages = [
-  '/assets/photo0.jpeg',
-  '/assets/photo1.jpeg',
-  '/assets/photo2.jpeg',
+  '/assets/currentProjects.png',
+  '/assets/interest.png',
+  '/assets/pastProjects.png',
 ];
 
 function Software() {
@@ -15,12 +15,8 @@ function Software() {
     <>
       <header></header>
 
-      {/* Flex container for left and right columns */}
       <main style={{ display: 'flex', gap: '1rem', padding: '1rem' }}>
-        {/* Left side: software content */}
         <ColumnLayout softwareImages={softwareImages} />
-
-        {/* Right side: PDF Resume */}
         <RightPanel />
       </main>
 

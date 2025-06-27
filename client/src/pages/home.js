@@ -3,9 +3,9 @@ import Footer from '../components/footer.js';
 import ColumnLayout from '../components/ColumnLayout.js';
 
 const softwareImages = [
-  '/assets/photo0.jpeg',
-  '/assets/photo1.jpeg',
-  '/assets/photo2.jpeg',
+  '/assets/currentProjects.png',
+  '/assets/interest.png',
+  '/assets/pastProjects.png',
 ];
 
 const modellingImages = [
