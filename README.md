@@ -3,6 +3,8 @@
 Welcome to my personal website!
 This web app showcases who I am, my work, my interests, and serves as a central hub to connect with me online. Built with modern web technologies and a clean design, it reflects both my personality and skills.
 
+// EVEYTHING IS STILL IN PROGRESS
+
 ## 🚀 Features
 
 - 💼 About Me & Portfolio
@@ -17,10 +19,10 @@ This web app showcases who I am, my work, my interests, and serves as a central 
 // WITH TIME YOU WILL MODIDFY THIS ONE
 
 - **Frontend:** HTML, CSS, JavaScript
-- **Framework/Libraries:** [Add any used: React, TailwindCSS, Bootstrap, etc.]
-- **Backend (if applicable):** Node.js, Express
-- **Database (if applicable):** Firebase / MongoDB / etc.
-- **Deployment:** GitHub Pages / Vercel / Netlify
+- **Framework/Libraries:**  React
+- **Backend (if applicable):** Node.js
+- **Database (if applicable):** Firebase 
+- **Deployment:** GitHub Pages
 
 ## THE SITE URL
 https://www.figma.com/design/FRy0COSiJ4FqnzBIFc8Rew/Untitled?node-id=0-1&p=f&t=IkK2pOBtPrf9EUKi-0
